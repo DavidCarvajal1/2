@@ -116,6 +116,14 @@ public class Main {
     public static void opcion3(int x1, int x2, int y1, int y2){
         System.out.println(((x1*x2)+(y1*y2)));
     }
+
+    /**
+     * Realizara la opcion cuatro del programa (coordenadas del vector producto)
+     * @param x1
+     * @param x2
+     * @param y1
+     * @param y2
+     */
     private static void opcion4(int x1, int x2, int y1, int y2){
         Scanner sc=new Scanner(System.in);
         int vector;
@@ -128,6 +136,14 @@ public class Main {
         }while (vector<0);
         System.out.println(modulo(x1,y1)*modulo(x2,y2)*Math.cos(vector));
     }
+
+    /**
+     * Esta funcion devuelve el modulo de un vector
+     * @param x
+     * @param y
+     * @return
+     * @see double
+     */
 
     public static int modulo(double x, double y) {
         return (int) Math.sqrt(x * x + y * y);
